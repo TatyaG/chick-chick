@@ -1,0 +1,124 @@
+.about {
+    padding: 62px 0;
+}
+
+.about__title {
+    max-width: 700px;
+    margin-bottom: 24px;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 120%;
+    text-transform: uppercase;
+}
+
+.about__descr {
+    margin-bottom: 72px;
+    max-width: 700px;
+    font-size: 16px;
+    line-height: 150%;
+    color: #BFBDB2;
+}
+
+.about__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px 32px;
+}
+
+.about__item-title {
+    margin-bottom: 8px;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 120%;
+    text-transform: uppercase;
+}
+
+.about__item-descr {
+    font-size: 16px;
+    line-height: 130%;
+    color: #BFBDB2;
+
+}
+
+.about__item {
+    padding: 6px 6px 6px 96px;
+    max-width: 384px;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 80px;
+    
+}
+
+.icon-1 {
+    background-image: url(../img/icon-1.svg);
+}
+
+.icon-2 {
+    background-image: url(../img/icon-2.svg);
+}
+
+.icon-3 {
+    background-image: url(../img/icon-3.svg);
+}
+
+@media (max-width: 1024px) {
+    .about__item {
+        max-width: 290px;
+        background-position: top left;
+        padding: 96px 0 0 0;
+    }
+
+    .about__list {
+    gap: 24px 29px;
+}
+}
+
+@media (max-width: 768px) {
+    .about {
+        padding: 40px 0;
+    }
+
+    .about__title {
+        max-width: 584px;
+        font-size: 32px;
+    }
+
+    .about__list {
+        gap: 24px 32px;
+    }
+}
+
+@media (max-width: 992px) {
+    .about__list {
+        grid-template-columns: repeat(auto-fit, minmax(219px, 1fr));
+    }
+}
+
+@media (max-width: 560px) {
+    .about {
+        padding: 32px 0;
+    }
+
+    .about__title {
+        margin-bottom: 16px;
+        font-size: 20px;
+    }
+
+    .about__descr {
+        margin-bottom: 32px;
+        font-size: 12px;
+    }
+
+    .about__item {
+        padding: 0 0 5px 72px;
+        background-size: 64px;
+    }
+
+    .about__item-title {
+        font-size: 16px;
+    }
+
+    .about__item-descr {
+        font-size: 12px;
+    }
+}

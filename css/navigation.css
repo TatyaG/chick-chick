@@ -1,0 +1,33 @@
+.nav__list {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav__item:not(:last-child) {
+    margin-right: 33px;
+}
+
+.nav__link {
+    color: inherit;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 100%;
+    text-transform: uppercase;  
+}
+
+@media (max-width: 560px) {
+    .nav__item {
+        margin: 0;
+    }
+
+    .nav__item:not(:last-child) {
+        margin-bottom: 16px;
+    }
+
+    .nav__list {
+        flex-direction: column;
+        margin-bottom: 32px;
+    }
+}
